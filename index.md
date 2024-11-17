@@ -9,13 +9,13 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I'm a professor at the [Human-Computer Interaction Institute](https://hcii.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and an ML researcher at [Apple](https://www.apple.com/) <i class="fab fa-apple"></i>. I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
+I'm a student at [Massachusetts Institute of Technology](https://www.mit.edu/). I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
 
 I received my PhD from the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/), where I worked with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
 
-My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata.github.io/draco/) [at](https://arxiv.org/pdf/2110.12536) [premier](https://www.domoritz.de/papers/2023-LineBias-VIS.pdf) [academic](https://www.domoritz.de/papers/2023-AutoProfiler-VIS.pdf) [venues](https://arxiv.org/pdf/2404.03085) and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
 
-Find me on [GitHub](https://github.com/domoritz), the [Fediverse](https://vis.social/@dom), [Bluesky](https://bsky.app/profile/domoritz.de), [LinkedIn](https://www.linkedin.com/in/dominik-moritz-409b8124/), or [Twitter](https://twitter.com/domoritz).
+
+Find me on [GitHub](https://github.com/domoritz) or [LinkedIn](https://www.linkedin.com/in/dominik-moritz-409b8124/).
 </div>
 
 <div class="me" markdown="1">
