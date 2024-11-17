@@ -20,10 +20,10 @@ Find me on [GitHub](https://github.com/domoritz) or [LinkedIn](https://www.linke
 
 <div class="me" markdown="1">
 <picture>
-  <source srcset='/images/dominik_berlin.webp' type='image/webp' />
+  <source srcset='/images/hmbang.webp' type='image/webp' />
   <img
-    src='/images/dominik_berlin.jpg'
-    alt='Dominik Moritz'>
+    src='/images/hmbang.jpg'
+    alt='Hyemin Bang'>
 </picture>
 
 {:.no-list}
