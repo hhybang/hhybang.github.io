@@ -28,6 +28,7 @@
         width: 220px;
         height: 220px;
         border-radius: 6px;
+        padding-bottom: 5px;
       }
 
       ul {
@@ -36,88 +37,150 @@
     }
   }
 
+  .link-buttons {
+    display: flex;
+    flex-direction: row; /* Arrange items in a single row */
+    justify-content: center; /* Center-align the row of buttons */
+    gap: 5px; /* Space between buttons */
+    width: 100%; /* Ensure full width of parent container */
+  }
+  
   .button {
-    color: $brand-color;
-    padding: 6px 16px;
-    border-radius: 3px;
-    border: 1px solid lighten($brand-color, 20%);
-
-    &:hover {
-      opacity: 1;
-      text-decoration: none;
-      background-color: lighten($brand-color, 50%);
-    }
+    background-color: darkgrey; /* Dark gray background for each button */
+    color: white; /* White text for contrast */
+    padding: 5px 10px; /* Add padding inside each button */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Center-align text inside each button */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .button:hover {
+    background-color: #555; /* Darker shade on hover for effect */
   }
 
   .featured-projects {
-    font-size: 0.9em;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column; /* Each project is in its own row */
+  gap: 16px; /* Space between each project container */
+  margin-bottom: 1.5em;
+}
 
-    .project {
-      flex-grow: 1;
-      flex-basis: 0;
+.project {
+  display: flex;
+  flex-direction: row; /* Arrange image and text side-by-side */
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  transition: box-shadow 0.2s ease;
+  align-items: center;
 
-      display: flex;
-      flex-direction: column;
-
-      border-radius: 3px;
-      padding: 16px;
-      border: 1px solid #ddd;
-
-      transition: box-shadow 0.2s ease;
-
-      &:not(:last-child) {
-        margin-right: 16px;
-      }
-
-      &:hover {
-        box-shadow: #aaa 2px 2px 11px;
-      }
-
-      .spacer {
-        flex: 1;
-      }
-
-      .title {
-        margin: 0 0 0.6em 0;
-        font-size: 1.3em;
-        font-weight: bold;
-        line-height: 1;
-      }
-
-      p {
-        font-size: 0.85em;
-        margin: 0.7em 0;
-        line-height: 1.2;
-      }
-
-      .preview-image {
-        display: block;
-        width: 100%;
-        height: 0;
-        padding-top: 60%;
-        border: 1px solid #f1f1f1;
-        background-size: cover;
-        background-position: top left;
-        transition: background 1.5s;
-
-        &:hover {
-          background-position: bottom right;
-        }
-      }
-
-      .links {
-        font-size: 0.8em;
-
-        a {
-          margin-right: 0.5em;
-          display: inline-block;
-        }
-      }
-    }
+  &:hover {
+    box-shadow: #aaa 2px 2px 11px;
   }
+}
+
+.preview-image {
+  flex: 0 0 30%; /* Fixed width */
+  width: 30%; /* Set a specific width */
+  height: 150px; /* Set a specific height */
+  margin-right: 16px; /* Space between image and description */
+  border: 1px solid #f1f1f1;
+  background-size: cover; /* Scale the background image slightly larger */
+  background-position: top left; /* Center image by default */
+  transition: background-position 1.5s, background-size 1.5s; /* Transition both position and size */
+
+
+  &:hover {
+    background-position: bottom right;
+  }
+}
+
+.project-content {
+  flex: 1; /* Description takes up the remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content .title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+
+.project-content p {
+  font-size: 0.85em;
+  margin: 0.7em 0;
+  line-height: 1.2;
+}
+
+  // .featured-projects {
+  //   display: flex;
+  //   flex-wrap: column; 
+  //   gap: 16px;
+  //   // justify-content: center; /* Center the project items horizontally */
+  //   margin-bottom: 1.5em;
+
+  //   .project {
+  //     flex: 1 1 50%; /* Each project takes up about 22% of the container's width, adjust as needed */
+  //     max-width: 50%; /* Limits each project to 22% width */
+  //     display: flex;
+  //     flex-direction: row;
+  //     padding: 16px;
+  //     border: 1px solid #ddd;
+  //     border-radius: 3px;
+  //     transition: box-shadow 0.2s ease;
+  //     align-items: center;
+
+  //     &:not(:last-child) {
+  //       margin-right: 16px;
+  //     }
+
+  //     &:hover {
+  //       box-shadow: #aaa 2px 2px 11px;
+  //     }
+
+  //     .spacer {
+  //       flex: 1;
+  //     }
+
+  //     .title {
+  //       margin: 0 0 0.6em 0;
+  //       font-size: 1.3em;
+  //       font-weight: bold;
+  //       line-height: 1;
+  //     }
+
+  //     p {
+  //       font-size: 0.85em;
+  //       margin: 0.7em 0;
+  //       line-height: 1.2;
+  //     }
+
+  //     .preview-image {
+  //       display: block;
+  //       width: 100%;
+  //       height: 0;
+  //       padding-top: 60%;
+  //       border: 1px solid #f1f1f1;
+  //       background-size: cover;
+  //       background-position: top left;
+  //       transition: background 1.5s;
+
+  //       &:hover {
+  //         background-position: bottom right;
+  //       }
+  //     }
+
+  //     .links {
+  //       font-size: 0.8em;
+
+  //       a {
+  //         margin-right: 0.5em;
+  //         display: inline-block;
+  //       }
+  //     }
+  //   }
+  // }
 
   .featured-publications {
     font-size: 0.95em;

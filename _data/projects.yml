@@ -1,26 +1,24 @@
-- title: Visualization Group 
+- title: MIT - Visualization Group 
   url: https://idl.uw.edu/mosaic/
   code: https://github.com/uwdata/mosaic
   paper: https://www.domoritz.de/papers/2023-Mosaic-VIS.pdf
   image: mosaic.png
-  description: "Investigating methods to interpret and align model learning behavior with humans."
-  highlight: 2
+  description: "Investigating methods to interpret and align model learning behavior with humans. Developed structural probes to analyze the mechanistic interpretability of language models using the VisText captioning dataset, aiming to uncover deeper insights into their internal functioning. Investigated human-alignment using quantitative metrics to assess the correlation between model-generated saliency maps and human derived reasoning."
 
-- title: Personal Robots Group (MIT Media Lab)
+- title: MIT Media Lab - Personal Robots Group
   url: https://developer.apple.com/documentation/Charts
   video: https://developer.apple.com/wwdc22/10136
   image: swiftcharts.png
-  description: "Developed an interactive storybook program for Jibo and conducted user test with children to evaluate engagement."
-  highlight: 4
+  description: "Designed a storybook reading program with Jibo, a social robot. Developed a web application allowing users to create their own interactive storybook. Conducted user test with children to evaluate engagement."
 
-- title: Laboratory for Information & Decision Systems
+- title: MIT - Laboratory for Information & Decision Systems
   code: https://developer.apple.com/documentation/accessibility/audio_graphs
   video: https://developer.apple.com/videos/play/wwdc2021/10122/
   image: audiographs.png
-  description: "Designed and enhanced assistive keyboard technology for single-button typing, Nomon."
+  description: "Improved installation packages for Nomon, an assistive keyboard allowing users to interact with the computer with a single button. Designed improved implementation concentrating on assistive technology for various groups of users."
 
-- title: Scheller Teacher Education Program
+- title: MIT - Scheller Teacher Education Program
   code: https://github.com/apache/arrow/tree/master/js
   image: arrow.png
-  description: "Designed STEM education simulations for elementary students on science topics using Starlogo Nova."
+  description: "Designed STEM education simulations for elementary students using Starlogo Nova, a block coding education technology."
 
