@@ -27,12 +27,32 @@ Find me on [GitHub](https://github.com/domoritz) or [LinkedIn](https://www.linke
     src='/images/hmbang.jpg'
     alt='Hyemin Bang'>
 </picture>
+<div class="row intro-links">
 
-{:.no-list}
-* <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-* NSH 2504B
+  <a class="button" href="http://angieboggust.com/cv_angieboggust.pdf">
+  <div><b>CV</b></div>
+  </a>
+
+  <a class="button" href="https://scholar.google.com/citations?user=pQd1HSK5lzEC">
+  <div><i class="fa-solid fa-graduation-cap"></i></div>
+  </a>
+
+  <a class="button" href="https://github.com/aboggust">
+  <div><i class="fa-brands fa-github"></i></div>
+  </a>
+
+  <a class="button" href="https://www.linkedin.com/in/angieboggust/">
+  <div><i class="fa-brands fa-linkedin-in"></i></div>
+  </a>
+
+  </div>
+  <div class="row intro-links">
+  <a class="button" id="email" href="mailto:aboggust@csail.mit.edu">
+  <div>aboggust@csail.mit.edu</div>
+  </a>
+  
 </div>
-
+</div>
 </div>
 
 During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). In 2013, I received my B.S. from [Hasso Plattner Institute](https://hpi.de/). I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), [Google Research](https://ai.google/research/), [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/), and others. Details are in my [CV]({{ "/cv/" | relative_url }}).
