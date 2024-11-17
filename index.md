@@ -15,8 +15,6 @@ I'm a student at [Massachusetts Institute of Technology](https://www.mit.edu/). 
 
 I like this and that 
 
-
-Find me on [GitHub](https://github.com/domoritz) or [LinkedIn](https://www.linkedin.com/in/dominik-moritz-409b8124/).
 </div>
 
 <div class="me" markdown="1">
