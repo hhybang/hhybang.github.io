@@ -4,7 +4,8 @@ title: "Home"
 class: home
 ---
 
-# HYEMIN BANG
+# **Hello, I'm HYEMIN BANG**
+## I am _____
 
 <div class="columns" markdown="1">
 
@@ -19,6 +20,7 @@ Find me on [GitHub](https://github.com/domoritz) or [LinkedIn](https://www.linke
 </div>
 
 <div class="me" markdown="1">
+
 <picture>
   <source srcset='/images/hmbang.webp' type='image/webp' />
   <img
