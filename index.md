@@ -12,8 +12,7 @@ class: home
 
 I'm a student at [Massachusetts Institute of Technology](https://www.mit.edu/). I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
 
-I received my PhD from the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/), where I worked with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
-
+I like this and that 
 
 
 Find me on [GitHub](https://github.com/domoritz) or [LinkedIn](https://www.linkedin.com/in/dominik-moritz-409b8124/).
