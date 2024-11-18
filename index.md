@@ -4,7 +4,7 @@ title: "Home"
 class: home
 ---
 
-# **Hello, I'm Hyemin (Helen) Bang**
+# **Hello, I'm Hyemin Bang**
 ## I’m an MIT Meng student studying AI and HCI.
 
 <div class="columns" markdown="1">
@@ -12,6 +12,7 @@ class: home
 <div class="intro" markdown="1">
 
 I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/), where my research focuses on aligning AI systems with human expectations by exploring ways to reveal and adjust AI model behaviors. 
+
 
 I previously graduated with an SB in Computer Science from MIT. 
 </div>
