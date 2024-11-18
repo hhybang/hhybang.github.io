@@ -4,17 +4,16 @@ title: "Home"
 class: home
 ---
 
-# **Hello, I'm HYEMIN BANG**
-## I am _____
+# **Hello, I'm Hyemin (Helen) Bang**
+## I’m an MIT Meng student studying AI and HCI.
 
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
 
-I'm a student at [Massachusetts Institute of Technology](https://www.mit.edu/). I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
+I work with Arvind Satyanarayan in the MIT CSAIL Visualization Group, where my research focuses on aligning AI systems with human expectations by exploring ways to reveal and adjust AI model behaviors. 
 
-I like this and that 
-
+I previously graduated with an SB in Computer Science from MIT. 
 </div>
 
 <div class="me" markdown="1">
