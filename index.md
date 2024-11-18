@@ -11,7 +11,7 @@ class: home
 
 <div class="intro" markdown="1">
 
-I work with Arvind Satyanarayan in the MIT CSAIL Visualization Group, where my research focuses on aligning AI systems with human expectations by exploring ways to reveal and adjust AI model behaviors. 
+I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/), where my research focuses on aligning AI systems with human expectations by exploring ways to reveal and adjust AI model behaviors. 
 
 I previously graduated with an SB in Computer Science from MIT. 
 </div>
@@ -31,13 +31,13 @@ I previously graduated with an SB in Computer Science from MIT.
     <a class="button" href="http://angieboggust.com/cv_angieboggust.pdf">
       <div><b>CV</b></div>
     </a>
-    <a class="button" href="https://scholar.google.com/citations?user=pQd1HSK5lzEC">
+<!--     <a class="button" href="https://scholar.google.com/citations?user=pQd1HSK5lzEC">
       <div><i class="fa-solid fa-graduation-cap"></i></div>
-    </a>
-    <a class="button" href="https://github.com/aboggust">
+    </a> -->
+    <a class="button" href="https://github.com/hhybang">
       <div><i class="fa-brands fa-github"></i></div>
     </a>
-    <a class="button" href="https://www.linkedin.com/in/angieboggust/">
+    <a class="button" href="https://www.linkedin.com/in/hyeminbang/">
       <div><i class="fa-brands fa-linkedin-in"></i></div>
     </a>
   </div>
