@@ -227,4 +227,26 @@
       }
     }
   }
+
+  .featured-teaching {
+    display: flex;
+    flex-direction: row; /* Each project is in its own row */
+    gap: 16px; /* Space between each project container */
+    margin-bottom: 1.5em;
+  }
+  
+  .teaching {
+    display: flex;
+    flex-direction: column; /* Arrange image and text side-by-side */
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: box-shadow 0.2s ease;
+    align-items: center;
+  
+    &:hover {
+      box-shadow: #aaa 2px 2px 11px;
+    }
+  }
+
 }
