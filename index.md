@@ -11,8 +11,8 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). My research focuses on human-centered AI, studying how to develop interpretable AI systems that align with human reasoning and empower users to make confident, informed decisions.
-
+Currently, I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). My research focuses on human-centered AI, studying how to develop interpretable AI systems that align with human reasoning and empower users to make confident, informed decisions.
+<br >
 Previously, I earned a Bachelor of Science in Computer Science and Engineering from [MIT](https://mit.edu/). After graduating, I worked as a Systems Developer at [InterSystems](https://intersystems.com/), where I integrated machine learning capabilities into large-scale database platforms.
 </div>
 
@@ -48,4 +48,25 @@ Previously, I earned a Bachelor of Science in Computer Science and Engineering f
 
 <!-- <a href="mailto:{{ site.email }}">{{ site.email }}</a> -->
 </div>
+</div>
+
+
+## Research
+<div class="featured-projects">
+  <!-- {% for project in site.data.projects %} -->
+    <div class="project">
+      <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div>
+      <div class="project-content">
+        <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">{{ "Explanation Alignment: Quantifying the Correctness of Model Reasoning At Scale" }}</a></div>
+        <p>{{ project.description }}</p>
+        <div class="links">
+          <!-- {% if project.code %} -->
+            <a href="https://github.com/mitvis/explanation_alignment">Code</a>
+          <!-- {% endif %}
+          {% if project.paper %} -->
+            <a href="https://vis.csail.mit.edu/pubs/explanation-alignment.pdf">Paper</a>
+        </div>
+      </div>
+    </div>
+  <!-- {% endfor %} -->
 </div>
