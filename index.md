@@ -11,7 +11,11 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). Prior to this, I graduated from MIT with a BS in Computer Science and Engineering and worked as a Systems Developer at InterSystems.  
+I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/).  
+
+I am interested in studying human-centered AI, developing interpretable AI systems that allign with human reasoning to empower uesrs to make confident, informed decissions.  
+
+Prior to this, I graduated from MIT with a BS in Computer Science and Engineering and worked as a Systems Developer at InterSystems.  
 </div>
 
 <div class="me" markdown="1">
@@ -39,7 +43,7 @@ I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvind
       <div><i class="fa-brands fa-linkedin-in"></i></div>
     </a>
     <a class="button" href="mailto:{{ site.email }}">
-      <div><i class="fa fa-envelop" aria-hidden="true"></i></div>
+      <div><i class="fa-brands fa-envelop"></i></div>
     </a>
   </div>
 </div>
