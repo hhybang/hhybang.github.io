@@ -54,7 +54,7 @@ Previously, I earned a Bachelor of Science in Computer Science and Engineering f
 ## Research
 <div class="featured-projects">
     <div class="project">
-      <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.jpg');"></div>
+      <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div>
       <div class="project-content">
         <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">{{ "Explanation Alignment: Quantifying the Correctness of Model Reasoning At Scale" }}</a></div>
         <!-- <p></p> -->
