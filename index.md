@@ -15,7 +15,7 @@ class: home
 <br >
 <p>Previously, I earned a Bachelor of Science in Computer Science and Engineering from <a href="https://mit.edu/">MIT</a>. After graduating, I worked as a Systems Developer at <a href="https://intersystems.com/">InterSystems</a>, where I integrated machine learning capabilities into large-scale database platforms. </p>
 <br >
-<p>I am now applying to PhD programs to further study AI + HCI.</p>
+<p>I’m passionate about exploring how AI can better align with human cognition, addressing challenges in interpretability and usability to make AI systems more accessible and impactful across diverse domains.</p>
 </div>
 
 <div class="me" markdown="1">
@@ -74,7 +74,7 @@ class: home
       <!-- <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div> -->
       <div class="teaching-content">
         <div class="title"><a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/">Break Through Tech AI 2024</a></div>
-        <p>a 1-year, extracurricular program designed for women, non-binary, and underrepresented university students, equipping them with skills in data science, AI, and ML.</p>
+        <p>1-year, extracurricular program designed for women, non-binary, and underrepresented university students, equipping them with skills in data science, AI, and ML.</p>
         <!-- <div class="links">
             <a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
         </div> -->
