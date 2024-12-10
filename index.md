@@ -32,16 +32,19 @@ I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvind
 <!--     <a class="button" href="https://scholar.google.com/citations?user=pQd1HSK5lzEC">
       <div><i class="fa-solid fa-graduation-cap"></i></div>
     </a> -->
-    <a class="button" href="https://github.com/hhybang">
+    <!-- <a class="button" href="https://github.com/hhybang">
       <div><i class="fa-brands fa-github"></i></div>
-    </a>
+    </a> -->
     <a class="button" href="https://www.linkedin.com/in/hyeminbang/">
       <div><i class="fa-brands fa-linkedin-in"></i></div>
+    </a>
+    <a class="button" href="mailto:{{ site.email }}">
+      <div><i class="fa fa-envelop" aria-hidden="true"></i></div>
     </a>
   </div>
 </div>
 
-<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+<!-- <a href="mailto:{{ site.email }}">{{ site.email }}</a> -->
 </div>
 </div>
 
