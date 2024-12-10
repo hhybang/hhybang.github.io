@@ -1,18 +1,17 @@
 ---
 layout: page
-title: "Home"
+title: ""
 class: home
 ---
 
 # **Hello, I'm Hyemin (Helen) Bang**
-## I'm an MIT MEng student studying AI + HCI.
+<!-- ## I'm an MEng student at MIT studying AI + HCI. -->
 <!-- ### This website is under construction.  -->
 
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-
-I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/), where I specialize in human centered AI research. My current work focuses on creating interpretable AI systems that allign with human reasoning, enabling users to make informed, confident decisions. 
+I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). My research focuses on human-centered AI, developing interpretable AI systems that allign with human reasoning to empower uesrs to make confident, informed decissions. 
 
 Prior to this, I graduated from MIT with a BS in Computer Science and Engineering and worked as a Systems Developer at InterSystems. 
 </div>
@@ -53,8 +52,8 @@ Prior to this, I graduated from MIT with a BS in Computer Science and Engineerin
 </div>
 
 
-## Featured Projects
-<div class="featured-projects">
+## Research
+<div class="research">
   {% for project in site.data.projects %}
     <div class="project">
       <div class="preview-image" style="background-image: url('/images/projects/{{ project.image }}');"></div>
@@ -76,10 +75,3 @@ Prior to this, I graduated from MIT with a BS in Computer Science and Engineerin
     </div>
   {% endfor %}
 </div>
-
-
-## Featured Publication 
-<div class="featured-publications">
-
-</div>
-
