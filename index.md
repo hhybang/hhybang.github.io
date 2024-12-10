@@ -68,7 +68,7 @@ class: home
     </div>
 </div>
 
-## Teaching
+## Teaching Assistantships
 <div class="featured-teaching">
     <div class="teaching">
       <!-- <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div> -->
