@@ -238,7 +238,7 @@
 
 .teaching {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: row; /* Stack items vertically */
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -253,7 +253,7 @@
 .teaching-content {
   width: 100%; /* Take full width of the container */
   display: flex;
-  flex-direction: column; /* Stack title, paragraph, and link vertically */
+  flex-direction: row; /* Stack title, paragraph, and link vertically */
   align-items: center; /* Center align the content */
 }
 
