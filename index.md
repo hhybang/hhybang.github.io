@@ -55,28 +55,20 @@ Prior to this, I graduated from MIT with a BS in Computer Science and Engineerin
 
 ## Research
 <div class="research">
-  I am interested in human-centered AI, developing interpretable AI systems that allign with human reasoning to empower uesrs to make confident, informed decissions.  
-</div>
-
-<!-- <div class="research">
-  {% for project in site.data.projects %}
+  <!-- {% for project in site.data.projects %} -->
     <div class="project">
-      <div class="preview-image" style="background-image: url('/images/projects/{{ project.image }}');"></div>
+      <!-- <div class="preview-image" style="background-image: url('/images/projects/{{ project.image }}');"></div> -->
       <div class="project-content">
-        <div class="title"><a href="{{ project.url }}">{{ project.title }}</a></div>
+        <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">{{ "Explanation Alignment: Quantifying the Correctness of Model Reasoning At Scale" }}</a></div>
         <p>{{ project.description }}</p>
         <div class="links">
-          {% if project.code %}
-            <a href="{{ project.code }}">Code</a>
-          {% endif %}
-          {% if project.paper %}
-            <a href="{{ project.paper }}">Paper</a>
-          {% endif %}
-          {% if project.video %}
-            <a href="{{ project.video }}">Video</a>
-          {% endif %}
+          <!-- {% if project.code %} -->
+            <a href="https://github.com/mitvis/explanation_alignment">Code</a>
+          <!-- {% endif %}
+          {% if project.paper %} -->
+            <a href="https://vis.csail.mit.edu/pubs/explanation-alignment.pdf">Paper</a>
         </div>
       </div>
     </div>
-  {% endfor %}
-</div> -->
+  <!-- {% endfor %} -->
+</div>
