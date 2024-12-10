@@ -6,6 +6,7 @@ class: home
 
 # **Hello, I'm Hyemin Bang**
 ## I’m an MIT Meng student studying AI and HCI.
+### This website is under construction. 
 
 <div class="columns" markdown="1">
 
