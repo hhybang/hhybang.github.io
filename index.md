@@ -73,26 +73,26 @@ class: home
     <div class="teaching">
       <!-- <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div> -->
       <div class="teaching-content">
-        <div class="title">Break Through Tech AI 2024</div>
-        <div class="links">
+        <div class="title"><a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/">Break Through Tech AI 2024</a></div>
+        <!-- <div class="links">
             <a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="teaching">
       <!-- <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div> -->
       <div class="teaching-content">
-        <div class="title">6.7930/HST.956 Machine Learning for Healthcare 2024</div>
-        <div class="links">
+        <div class="title"><a href="https://mlhcmit.github.io/">6.7930/HST.956 Machine Learning for Healthcare 2024</a></div>
+        <!-- <div class="links">
             <a href="https://mlhcmit.github.io/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="teaching">
       <div class="teaching-content">
-        <div class="title">6.4100 [6.034] Artificial Intelligence 2022</div>
+        <div class="title"><a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page">6.4100 [6.034] Artificial Intelligence 2022</a></div>
         <div class="links">
-            <a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page"><i class="fas fa-link" aria-hidden="true"></i> (Old) Website</a>
+            <!-- <a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page"><i class="fas fa-link" aria-hidden="true"></i> (Old) Website</a> -->
             <a href='/images/034_photo.png'><i class="fa-solid fa-image" aria-hidden="true"></i></a>
         </div>
       </div>
