@@ -49,24 +49,3 @@ Previously, I earned a Bachelor of Science in Computer Science and Engineering f
 <!-- <a href="mailto:{{ site.email }}">{{ site.email }}</a> -->
 </div>
 </div>
-
-
-## Research
-<div class="research">
-  <!-- {% for project in site.data.projects %} -->
-    <div class="project">
-      <!-- <div class="preview-image" style="background-image: url('/images/projects/{{ project.image }}');"></div> -->
-      <div class="project-content">
-        <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">{{ "Explanation Alignment: Quantifying the Correctness of Model Reasoning At Scale" }}</a></div>
-        <p>{{ project.description }}</p>
-        <div class="links">
-          <!-- {% if project.code %} -->
-            <a href="https://github.com/mitvis/explanation_alignment">Code</a>
-          <!-- {% endif %}
-          {% if project.paper %} -->
-            <a href="https://vis.csail.mit.edu/pubs/explanation-alignment.pdf">Paper</a>
-        </div>
-      </div>
-    </div>
-  <!-- {% endfor %} -->
-</div>
