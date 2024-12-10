@@ -233,20 +233,26 @@
     flex-direction: row; /* Each project is in its own row */
     gap: 16px; /* Space between each project container */
     margin-bottom: 1.5em;
-  }
-  
-  .teaching {
+    flex-wrap: wrap; /* Allow boxes to wrap onto the next row if necessary */
+}
+
+.teaching {
     display: flex;
-    flex-direction: column; /* Arrange image and text side-by-side */
+    flex-direction: column; /* Arrange image and text in a column */
     padding: 16px;
     border: 1px solid #ddd;
     border-radius: 3px;
     transition: box-shadow 0.2s ease;
     align-items: center;
-  
-    &:hover {
-      box-shadow: #aaa 2px 2px 11px;
-    }
-  }
+    flex: 1 1 calc(33.33% - 16px); /* Ensures equal width and respects the gap */
+    max-width: calc(33.33% - 16px); /* Prevent boxes from exceeding the set width */
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+.teaching-content {
+    flex: 1; /* Description takes up the remaining space */
+    display: flex;
+    flex-direction: row;
+}
 
 }
