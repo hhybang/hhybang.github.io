@@ -5,13 +5,13 @@ class: home
 ---
 
 # **Hello, I'm Hyemin (Helen) Bang**
-### I'm an MEng student at MIT studying AI + HCI.
+### I'm an Master's student at MIT studying AI + HCI.
 <!-- ### This website is under construction.  -->
 
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-<p>Currently, I work with <a href="https://arvindsatya.com/">Arvind Satyanarayan</a> in the <a href="https://vis.csail.mit.edu/">MIT CSAIL Visualization Group</a>. My research focuses on human-centered AI, studying how to develop interpretable AI systems that align with human reasoning and empower users to make confident, informed decisions. </p>
+<p>Currently, I work with <a href="https://arvindsatya.com/">Arvind Satyanarayan</a> in the <a href="https://vis.csail.mit.edu/">MIT CSAIL Visualization Group</a>. My research focuses on <strong>human-centered AI</strong>, studying how to develop interpretable AI systems that align with human reasoning and empower users to make confident, informed decisions. </p>
 <br >
 <p>Previously, I earned a Bachelor of Science in Computer Science and Engineering from <a href="https://mit.edu/">MIT</a>. After graduating, I worked as a Systems Developer at <a href="https://intersystems.com/">InterSystems</a>, where I integrated machine learning capabilities into large-scale database platforms. </p>
 <br >
@@ -74,7 +74,7 @@ class: home
       <!-- <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div> -->
       <div class="teaching-content">
         <div class="title"><a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/">Break Through Tech AI 2024</a></div>
-        <p>1-year, extracurricular program designed for women, non-binary, and underrepresented university students, equipping them with skills in data science, AI, and ML.</p>
+        <!-- <p>1-year, extracurricular program designed for women, non-binary, and underrepresented university students, equipping them with skills in data science, AI, and ML.</p> -->
         <!-- <div class="links">
             <a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
         </div> -->
@@ -84,7 +84,7 @@ class: home
       <!-- <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div> -->
       <div class="teaching-content">
         <div class="title"><a href="https://mlhcmit.github.io/">6.7930/HST.956 Machine Learning for Healthcare 2024</a></div>
-        <p>Introduces the nature of clinical data and the use of machine learning for risk stratification, disease progression modeling, precision medicine, diagnosis, subtype discovery, and improving clinical workflows. </p>
+        <!-- <p>Introduces the nature of clinical data and the use of machine learning for risk stratification, disease progression modeling, precision medicine, diagnosis, subtype discovery, and improving clinical workflows. </p> -->
         <!-- <div class="links">
             <a href="https://mlhcmit.github.io/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
         </div> -->
@@ -93,7 +93,7 @@ class: home
     <div class="teaching">
       <div class="teaching-content">
         <div class="title"><a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page">6.4100 [6.034] Artificial Intelligence 2022</a></div>
-        <p>Introduces representations, methods, and architectures used to build applications and to account for human intelligence from a computational point of view.</p>
+        <!-- <p>Introduces representations, methods, and architectures used to build applications and to account for human intelligence from a computational point of view.</p> -->
         <div class="links">
             <!-- <a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page"><i class="fas fa-link" aria-hidden="true"></i> (Old) Website</a> -->
             <a href='/images/034_photo.png'><i class="fa-solid fa-image" aria-hidden="true"></i></a>
