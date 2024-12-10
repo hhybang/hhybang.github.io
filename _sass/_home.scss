@@ -238,7 +238,7 @@
 
 .teaching {
     display: flex;
-    flex-direction: column; /* Arrange image and text in a column */
+    flex-direction: row; /* Arrange image and text in a column */
     padding: 16px;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -252,7 +252,7 @@
 .teaching-content {
     flex: 1; /* Description takes up the remaining space */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 // .teaching-content p {
