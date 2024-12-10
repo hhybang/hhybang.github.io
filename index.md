@@ -68,27 +68,33 @@ class: home
     </div>
 </div>
 
-## Teaching Assistants
+## Teaching
 <div class="featured-teaching">
     <div class="teaching">
-      <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div>
+      <!-- <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div> -->
       <div class="teaching-content">
-        <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">Explanation Alignment: Quantifying the Correctness of Model Reasoning At Scale</a></div>
-        <p>Explanation alignment measures the agreement between model-generated explanations and human annotations to distinguish models relying on spurious correlations and model biases by aggregating saliency-based metrics, such as Shared Interest and The Pointing Game, across datasets.</p>
+        <div class="title">Break Through Tech AI</a></div>
+        <div class="links">
+            <a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
+        </div>
       </div>
     </div>
     <div class="teaching">
-      <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div>
+      <!-- <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div> -->
       <div class="teaching-content">
-        <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">6.7930 Machine Learning for Healthcare 2024</a></div>
-        <p>Explanation alignment measures the agreement between model-generated explanations and human annotations to distinguish models relying on spurious correlations and model biases by aggregating saliency-based metrics, such as Shared Interest and The Pointing Game, across datasets.</p>
+        <div class="title">6.7930/HST.956 Machine Learning for Healthcare 2024</a></div>
+        <div class="links">
+            <a href="https://mlhcmit.github.io/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
+        </div>
       </div>
     </div>
     <div class="teaching">
-      <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div>
+      <!-- <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div> -->
       <div class="teaching-content">
-        <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">6.4100 [6.034] Artificial Intelligence 2022</a></div>
-        <p>Explanation alignment measures the agreement between model-generated explanations and human annotations to distinguish models relying on spurious correlations and model biases by aggregating saliency-based metrics, such as Shared Interest and The Pointing Game, across datasets.</p>
+        <div class="title">6.4100 [6.034] Artificial Intelligence 2022</a></div>
+        <div class="links">
+            <a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page"><i class="fas fa-link" aria-hidden="true"></i> (Old) Website</a>
+        </div>
       </div>
     </div>
 </div>
