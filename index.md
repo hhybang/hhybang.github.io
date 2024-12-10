@@ -93,8 +93,8 @@ class: home
         <div class="title">6.4100 [6.034] Artificial Intelligence 2022</div>
         <div class="links">
             <a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page"><i class="fas fa-link" aria-hidden="true"></i> (Old) Website</a>
+            <a href='/images/034_photo.png'><i class="fa-solid fa-image" aria-hidden="true"></i></a>
         </div>
-        <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div>
       </div>
     </div>
 </div>
