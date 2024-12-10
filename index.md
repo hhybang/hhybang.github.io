@@ -11,7 +11,7 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-<p>Currently, I work with <a href="https://arvindsatya.com/">Arvind Satyanarayan</a> in the <a href="https://vis.csail.mit.edu/">MIT CSAIL Visualization Group</a>. Previously, I earned a Bachelor of Science in Computer Science and Engineering from <a href="https://mit.edu/">MIT</a>. Following my undergraduate studies, I worked as a Systems Developer at <a href="https://intersystems.com/">InterSystems</a>, where I integrated machine learning capabilities into large-scale database platforms. </p>
+<p>Currently, I work with <a href="https://arvindsatya.com/">Arvind Satyanarayan</a> in the <a href="https://vis.csail.mit.edu/">MIT CSAIL Visualization Group</a>. Previously, I earned a Bachelor of Science in Computer Science and Engineering from <a href="https://mit.edu/">MIT</a>, then worked as a Systems Developer at <a href="https://intersystems.com/">InterSystems</a>, where I integrated machine learning capabilities into large-scale database platforms. </p>
 <br >
 <p>I’m passionate in advancing <strong>human-centered AI</strong>, exploring its alignment with human cognition and addressing challenges in interpretability and usability to create accessible, impactful systems across diverse domains.</p>
 </div>
