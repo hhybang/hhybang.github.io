@@ -4,18 +4,17 @@ title: "Home"
 class: home
 ---
 
-# **Hello, I'm Hyemin Bang**
-## I’m an MIT Meng student studying AI and HCI.
-### This website is under construction. 
+# **Hello, I'm Hyemin (Helen) Bang**
+## I'm an MIT MEng student studying AI + HCI.
+<!-- ### This website is under construction.  -->
 
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
 
-I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/), where my research focuses on aligning AI systems with human expectations by exploring ways to reveal and adjust AI model behaviors. 
+I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/), where I specialize in human centered AI research. My current work focuses on creating interpretable AI systems that allign with human reasoning, enabling users to make informed, confident decisions. 
 
-
-I previously graduated with an SB in Computer Science from MIT. 
+Prior to this, I graduated from MIT with a BS in Computer Science and Engineering and worked as a Systems Developer at InterSystems. 
 </div>
 
 <div class="me" markdown="1">
@@ -30,7 +29,7 @@ I previously graduated with an SB in Computer Science from MIT.
 
 <div style="display: flex; justify-content: center;">
   <div class="link-buttons">
-    <a class="button" href="http://angieboggust.com/cv_angieboggust.pdf">
+    <a class="button" href="https://drive.google.com/file/d/10CfkCFo01MXuVk6zRN9A-EmL7QRCjUII/view?usp=sharing">
       <div><b>CV</b></div>
     </a>
 <!--     <a class="button" href="https://scholar.google.com/citations?user=pQd1HSK5lzEC">
