@@ -74,6 +74,7 @@ class: home
       <!-- <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div> -->
       <div class="teaching-content">
         <div class="title"><a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/">Break Through Tech AI 2024</a></div>
+        <p>a 1-year, extracurricular program designed for women, non-binary, and underrepresented university students, equipping them with skills in data science, AI, and ML.</p>
         <!-- <div class="links">
             <a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
         </div> -->
@@ -83,6 +84,7 @@ class: home
       <!-- <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div> -->
       <div class="teaching-content">
         <div class="title"><a href="https://mlhcmit.github.io/">6.7930/HST.956 Machine Learning for Healthcare 2024</a></div>
+        <p>Introduces students to machine learning in healthcare, including the nature of clinical data and the use of machine learning for risk stratification, disease progression modeling, precision medicine, diagnosis, subtype discovery, and improving clinical workflows. </p>
         <!-- <div class="links">
             <a href="https://mlhcmit.github.io/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
         </div> -->
@@ -91,6 +93,7 @@ class: home
     <div class="teaching">
       <div class="teaching-content">
         <div class="title"><a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page">6.4100 [6.034] Artificial Intelligence 2022</a></div>
+        <p>Introduces representations, methods, and architectures used to build applications and to account for human intelligence from a computational point of view.</p>
         <div class="links">
             <!-- <a href="https://ai6034.mit.edu/wiki/index.php?title=Main_Page"><i class="fas fa-link" aria-hidden="true"></i> (Old) Website</a> -->
             <a href='/images/034_photo.png'><i class="fa-solid fa-image" aria-hidden="true"></i></a>
