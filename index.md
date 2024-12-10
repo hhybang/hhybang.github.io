@@ -84,7 +84,7 @@ class: home
       <!-- <div class="preview-image" style="background-image: url('/images/034_photo.png');"></div> -->
       <div class="teaching-content">
         <div class="title"><a href="https://mlhcmit.github.io/">6.7930/HST.956 Machine Learning for Healthcare 2024</a></div>
-        <p>Introduces students to machine learning in healthcare, including the nature of clinical data and the use of machine learning for risk stratification, disease progression modeling, precision medicine, diagnosis, subtype discovery, and improving clinical workflows. </p>
+        <p>Introduces machine learning in healthcare, including the nature of clinical data and the use of machine learning for risk stratification, disease progression modeling, precision medicine, diagnosis, subtype discovery, and improving clinical workflows. </p>
         <!-- <div class="links">
             <a href="https://mlhcmit.github.io/"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
         </div> -->
