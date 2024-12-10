@@ -11,10 +11,10 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). My research focuses on human-centered AI, developing interpretable AI systems that allign with human reasoning to empower uesrs to make confident, informed decissions.
+I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). My research focuses on human-centered AI, developing interpretable AI systems that allign with human reasoning to empower uesrs to make confident, informed decissions.  
 
 
-Prior to this, I graduated from MIT with a BS in Computer Science and Engineering and worked as a Systems Developer at InterSystems. 
+Prior to this, I graduated from MIT with a BS in Computer Science and Engineering and worked as a Systems Developer at InterSystems.  
 </div>
 
 <div class="me" markdown="1">
