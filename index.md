@@ -5,17 +5,15 @@ class: home
 ---
 
 # **Hello, I'm Hyemin (Helen) Bang**
-<!-- ## I'm an MEng student at MIT studying AI + HCI. -->
+### I'm an MEng student at MIT studying AI + HCI.
 <!-- ### This website is under construction.  -->
 
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I'm a Master's student at MIT, working with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/).  
+I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). My research focuses on human-centered AI, studying how to develop interpretable AI systems that align with human reasoning and empower users to make confident, informed decisions.
 
-I am interested in studying human-centered AI, developing interpretable AI systems that allign with human reasoning to empower uesrs to make confident, informed decissions.  
-
-Prior to this, I graduated from MIT with a BS in Computer Science and Engineering and worked as a Systems Developer at InterSystems.  
+Previously, I earned a Bachelor of Science in Computer Science and Engineering from MIT. After graduating, I worked as a Systems Developer at InterSystems, where I integrated machine learning capabilities into large-scale database platforms.
 </div>
 
 <div class="me" markdown="1">
@@ -43,7 +41,7 @@ Prior to this, I graduated from MIT with a BS in Computer Science and Engineerin
       <div><i class="fa-brands fa-linkedin-in"></i></div>
     </a>
     <a class="button" href="mailto:{{ site.email }}">
-      <div><i class="fa-brands fa-envelop"></i></div>
+      <div><i class="fa-solid fa-envelope"></i></div>
     </a>
   </div>
 </div>
