@@ -13,7 +13,7 @@ class: home
 <div class="intro" markdown="1">
 I work with [Arvind Satyanarayan](https://arvindsatya.com/) in the [MIT CSAIL Visualization Group](https://vis.csail.mit.edu/). My research focuses on human-centered AI, studying how to develop interpretable AI systems that align with human reasoning and empower users to make confident, informed decisions.
 
-Previously, I earned a Bachelor of Science in Computer Science and Engineering from MIT. After graduating, I worked as a Systems Developer at InterSystems, where I integrated machine learning capabilities into large-scale database platforms.
+Previously, I earned a Bachelor of Science in Computer Science and Engineering from [MIT](https://mit.edu/). After graduating, I worked as a Systems Developer at [InterSystems](https://intersystems.com/), where I integrated machine learning capabilities into large-scale database platforms.
 </div>
 
 <div class="me" markdown="1">
