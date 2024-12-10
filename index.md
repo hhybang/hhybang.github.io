@@ -14,6 +14,8 @@ class: home
 <p>Currently, I work with <a href="https://arvindsatya.com/">Arvind Satyanarayan</a> in the <a href="https://vis.csail.mit.edu/">MIT CSAIL Visualization Group</a>. My research focuses on human-centered AI, studying how to develop interpretable AI systems that align with human reasoning and empower users to make confident, informed decisions. </p>
 <br >
 <p>Previously, I earned a Bachelor of Science in Computer Science and Engineering from <a href="https://mit.edu/">MIT</a>. After graduating, I worked as a Systems Developer at <a href="https://intersystems.com/">InterSystems</a>, where I integrated machine learning capabilities into large-scale database platforms. </p>
+<br >
+<p>I am now applying to PhD programs to further study AI + HCI.</p>
 </div>
 
 <div class="me" markdown="1">
