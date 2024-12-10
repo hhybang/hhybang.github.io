@@ -51,7 +51,7 @@ class: home
 </div>
 
 
-## Projects
+## Featured Projects
 <div class="featured-projects">
     <div class="project">
       <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div>
