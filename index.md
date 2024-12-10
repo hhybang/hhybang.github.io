@@ -57,10 +57,10 @@ Previously, I earned a Bachelor of Science in Computer Science and Engineering f
       <div class="preview-image" style="background-image: url('/images/projects/explanation_alignment.png');"></div>
       <div class="project-content">
         <div class="title"><a href="https://vis.csail.mit.edu/pubs/explanation-alignment/">{{ "Explanation Alignment: Quantifying the Correctness of Model Reasoning At Scale" }}</a></div>
-        <!-- <p></p> -->
+        <p>Explanation alignment measures the agreement between model-generated explanations and human annotations to detect spurious correlations and model biases by aggregating saliency-based metrics, such as Shared Interest and The Pointing Game, across datasets.</p>
         <div class="links">
-            <a href="https://github.com/mitvis/explanation_alignment">Code</a>
-            <a href="https://vis.csail.mit.edu/pubs/explanation-alignment.pdf">Paper</a>
+            <a href="https://github.com/mitvis/explanation_alignment"><i class="fa fa-github" aria-hidden="true"></i> Code</a>
+            <a href="https://vis.csail.mit.edu/pubs/explanation-alignment.pdf"><i class="fa-file-pdf far" aria-hidden="true"></i> Paper</a>
         </div>
       </div>
     </div>
