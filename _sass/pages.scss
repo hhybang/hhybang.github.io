@@ -1,0 +1,113 @@
+// Page-specific styles
+
+.page {
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e9ecef;
+
+    .page-title {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .page-content {
+    line-height: 1.8;
+  }
+}
+
+.home {
+  .intro {
+    margin-bottom: 3rem;
+
+    .profile-image {
+      float: left;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}
+
+.publications-list {
+  .publication-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .pub-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .pub-authors {
+      color: #666;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+
+    .pub-venue {
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        padding: 0.25rem 0.75rem;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        font-size: 0.875rem;
+        color: #0066cc;
+
+        &:hover {
+          background-color: #e9ecef;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.cv-section {
+  margin-bottom: 3rem;
+
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cv-item {
+    margin-bottom: 1.5rem;
+
+    .cv-item-title {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .cv-item-subtitle {
+      color: #666;
+      font-style: italic;
+    }
+
+    .cv-item-date {
+      color: #999;
+      font-size: 0.875rem;
+    }
+  }
+}
