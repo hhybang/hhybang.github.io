@@ -20,7 +20,7 @@ title: Home
   <h1>Hyemin Bang</h1>
   <h2 class="subtitle">MIT PhD student studying HCI + AI</h2>
 
-  <p>Hi! I'm Hyemin (Helen)! I'm a PhD student at MIT CSAIL advised by <a href='https://mitchellg.github.io'>Mitchell Gordon</a>. My rsearch focuses on improving human-AI interaction by creating more intuitive and transparent AI systems that empower people to collaborate effectively with AI.</p>
+  <p>Hi! I'm Hyemin (Helen)! I'm a PhD student at MIT CSAIL advised by <a href='https://mitchellg.github.io'>Mitchell Gordon</a>. My research focuses on improving human-AI interaction by creating more intuitive and transparent AI systems that empower people to collaborate effectively with AI.</p>
 
   <p>Previously, I received my SB and MEng in computer science from MIT, where I worked with <a href='https://arvindsatya.com'>Arvind Satyanarayan</a> in the <a href='http://vis.mit.edu/'>Visualization Group</a>.</p>
 </div>
