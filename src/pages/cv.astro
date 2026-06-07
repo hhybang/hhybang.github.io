@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { cv, contact } from '../data/cv';
+import { site } from '../data/site';
+---
+
+<BaseLayout title="CV">
+  <div class="cv-head rise">
+    <div>
+      <h1>{site.name}</h1>
+      <p class="contact">
+        <a href={`mailto:${contact.email}`}>{contact.email}</a>
+        <span class="sep">·</span>
+        {contact.location}
+      </p>
+    </div>
+    <a href={site.links.cv} target="_blank" rel="noopener" class="pdf-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <path d="M7 10l5 5 5-5"></path>
+        <path d="M12 15V3"></path>
+      </svg>
+      Download PDF
+    </a>
+  </div>
+
+  {
+    cv.map((section) => (
+      <section class="cv-section rise">
+        <h2 class="section-title">{section.heading}</h2>
+        {section.entries.map((entry) => (
+          <div class="cv-entry">
+            <div class="cv-date">{entry.date}</div>
+            <div class="cv-content">
+              <h3 class="cv-title">{entry.title}</h3>
+              {entry.subtitle && <p class="cv-subtitle" set:html={entry.subtitle} />}
+              {entry.detail && <p class="cv-detail" set:html={entry.detail} />}
+              {entry.bullets && (
+                <ul class="cv-bullets">
+                  {entry.bullets.map((b) => (
+                    <li set:html={b} />
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        ))}
+      </section>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .cv-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .cv-head h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.25rem;
+  }
+  .contact {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+  .contact .sep {
+    margin: 0 0.4rem;
+    opacity: 0.5;
+  }
+  .pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+  .pdf-btn:hover {
+    background: var(--accent-hover);
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+  }
+
+  .cv-entry {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1.5rem;
+    padding: 0.7rem 0;
+  }
+  .cv-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-faint);
+    text-align: right;
+    padding-top: 0.15rem;
+    white-space: nowrap;
+  }
+  .cv-title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .cv-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.1rem;
+  }
+  .cv-detail {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+  }
+  .cv-bullets {
+    margin: 0.35rem 0 0 1.1rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+  .cv-bullets li {
+    margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 560px) {
+    .cv-entry {
+      grid-template-columns: 1fr;
+      gap: 0.2rem;
+    }
+    .cv-date {
+      text-align: left;
+    }
+  }
+</style>

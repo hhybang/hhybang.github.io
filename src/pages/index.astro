@@ -1,0 +1,388 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import { site, news, publications } from '../data/site';
+
+const selected = publications.filter((p) => p.selected);
+---
+
+<BaseLayout>
+  <section class="hero rise">
+    <div class="avatar">
+      <img src="/images/profile.JPG" alt={site.name} />
+    </div>
+    <div class="hero-text">
+      <h1 class="name">
+        <span class="name-text">Hyemin <span class="helen"><span class="helen-inner"
+              >Helen&nbsp;</span></span>Bang</span>
+      </h1>
+      <p class="subtitle">{site.title}, {site.affiliation} · {site.tagline}</p>
+      <SocialLinks />
+    </div>
+  </section>
+
+  <div class="bio rise" style="animation-delay: 0.08s">
+    <p>
+      Hi! I'm Hyemin (Helen), <span lang="ko">혜민</span> in Korean, a PhD
+      student at MIT EECS advised by
+      <a href="https://mitchellg.github.io">Mitchell Gordon</a>. I work on what I
+      think of as <strong>human-grounded interpretability</strong>: I study
+      what's going on inside a model not as an end in itself, but so that people
+      can trust, oversee, and collaborate with AI systems.
+    </p>
+    <p>
+      I approach this from two angles. The first is understanding what models are
+      actually computing, using causal interpretability methods to find where a
+      model's stated reasoning diverges from what it's really doing inside. The
+      second is giving people ways to act on that understanding, designing
+      interactions where human judgment and disagreement actually shape how a
+      model behaves.
+    </p>
+    <p>
+      Before my PhD, I earned my bachelor's and master's in Computer Science from
+      MIT, where I worked with
+      <a href="https://arvindsatya.com">Arvind Satyanarayan</a> in the
+      <a href="http://vis.mit.edu/">Visualization Group</a> on interpreting and
+      aligning model behavior with human reasoning. Earlier, I spent two years as
+      a systems developer at InterSystems, integrating machine-learning platforms
+      and building data pipelines for their database systems.
+    </p>
+    <p>
+      Outside of research, I'm a
+      <a href="https://mitcommlab.mit.edu/eecs/">Communication Fellow</a> at MIT
+      EECS, where I help other students sharpen their communication skills, from
+      writing to talks. I also love mentoring, including undergraduates in data
+      science and AI through
+      <a class="quiet-link"
+        href="https://computing.mit.edu/cross-cutting/break-through-tech-ai/"
+        >Break Through Tech AI</a>, and I've had the joy of <span class="pop"
+        tabindex="0">TA'ing<img class="pop-media" src="/images/ta-034.png"
+          alt="The 6.034 AI course staff" /></span> courses across AI and HCI at
+      MIT.
+    </p>
+    <p>
+      When I'm not at my desk, you'll usually find me out for a run in the
+      morning, <span
+        class="pop" tabindex="0">skateboarding<span class="pop-media pop-video-frame"
+          ><video src="/images/skateboard.mov" muted loop playsinline
+            preload="none"></video></span></span> to work, picking up flowers and
+      keeping a little vegetable garden, digging through record shops for vinyls,
+      or sweating in hot yoga. I
+      love trying new things, and lately I've been learning to sail and throw
+      pottery! And wherever I am, there's a good chance my dog
+      <span class="chu" tabindex="0">Chu<img src="/images/chu.jpg"
+          alt="Chu, my dog, wearing sunglasses" class="chu-photo" /></span> is
+      nearby.
+    </p>
+  </div>
+
+  <h2 class="section-title">Recent Work</h2>
+  <div class="rise" style="animation-delay: 0.12s">
+    {selected.map((pub) => <PublicationCard pub={pub} />)}
+  </div>
+  {/* <p class="see-all">
+    <a href="/publications">See all publications →</a>
+  </p> */}
+
+  <h2 class="section-title">News</h2>
+  <ul class="news rise">
+    {
+      news.map((item) => (
+        <li class="news-item">
+          <span class="news-date">{item.date}</span>
+          <span class="news-text" set:html={item.html} />
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
+
+<script>
+  // Play the skateboard clip while its word is hovered/focused; reset on leave.
+  document.querySelectorAll<HTMLElement>('.pop').forEach((el) => {
+    const video = el.querySelector('video');
+    if (!video) return;
+    const play = () => video.play().catch(() => {});
+    const stop = () => {
+      video.pause();
+      video.currentTime = 0;
+    };
+    el.addEventListener('mouseenter', play);
+    el.addEventListener('focus', play);
+    el.addEventListener('mouseleave', stop);
+    el.addEventListener('blur', stop);
+  });
+</script>
+
+<style>
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* A defined ring so the circle reads as framed against the page: a thin
+       border plus a white gap and an accent ring via layered box-shadows. */
+    border: 1px solid var(--border);
+    box-shadow:
+      0 0 0 4px var(--bg),
+      0 0 0 6px var(--accent),
+      var(--shadow);
+    flex-shrink: 0;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    /* object-fit:cover fills the square frame from the portrait; object-position
+       picks the face band and transform zooms in to crop tightly on the face. */
+    object-fit: cover;
+    object-position: center 50%;
+    /* The portrait's width exactly fills the circle (no horizontal slack), so
+       object-position X can't shift it. We scale to zoom into the face, then
+       translate (in post-scale screen px) to bring the face up and left. */
+    transform: scale(2.2) translate(-8px, -10px);
+    transform-origin: center;
+  }
+  .hero-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Animated name: a draw-on accent underline that sweeps in on load. Hovering
+     the name gently reveals "Helen", the name I go by. */
+  .name-text {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+  }
+  .name-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.1em;
+    height: 0.12em;
+    width: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: draw-underline 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) 0.35s both;
+  }
+  @keyframes draw-underline {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  /* "Helen" is collapsed to zero width by default, then expands on hover so the
+     name reads "Hyemin Helen Bang" — a quiet hello with the name I prefer. */
+  .helen {
+    display: inline-block;
+    max-width: 0;
+    overflow: hidden;
+    vertical-align: bottom;
+    white-space: nowrap;
+    transition: max-width 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .helen-inner {
+    color: var(--accent);
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+  }
+  .name-text:hover .helen {
+    max-width: 7ch;
+  }
+  .name-text:hover .helen-inner {
+    opacity: 1;
+  }
+  /* Touch devices can't hover, so reveal Helen by default there. */
+  @media (hover: none) {
+    .helen {
+      max-width: 7ch;
+    }
+    .helen-inner {
+      opacity: 1;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+  .bio p {
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  /* Korean name in a soft serif (Gowun Batang). */
+  .bio [lang='ko'] {
+    font-family: 'Gowun Batang', serif;
+    font-size: 1.05em;
+  }
+  /* "Chu" is a hover/focus trigger that pops up a photo of my dog. Kept visually
+     quiet to match the other hobby popups. */
+  .chu {
+    position: relative;
+    color: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    border-bottom: 1px dotted var(--text-faint);
+    outline: none;
+  }
+  .chu-photo {
+    position: absolute;
+    left: 50%;
+    bottom: 150%;
+    width: 240px;
+    /* The global `img { max-width: 100% }` resolves against this absolutely
+       positioned img's tiny ancestor (the "Chu" span), which was clamping it to
+       a few px. Override so the fixed width actually applies. */
+    max-width: none;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    border: 4px solid var(--bg-elevated);
+    box-shadow: var(--shadow-lift);
+    transform: translate(-50%, 8px) scale(0.9) rotate(-3deg);
+    transform-origin: bottom center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: 20;
+  }
+  .chu:hover .chu-photo,
+  .chu:focus .chu-photo,
+  .chu:focus-visible .chu-photo {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1) rotate(-3deg);
+  }
+
+  /* A real link kept visually quiet: same color as the text, no mark until you
+     hover it. Distinct from the dotted hover-for-photo words. */
+  .quiet-link {
+    color: inherit;
+    text-decoration: none;
+    transition: text-decoration-color 0.15s ease;
+  }
+  .quiet-link:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* Generic hover/focus popups for hobby words (flowers, vinyls, skateboarding).
+     Kept visually quiet — same weight/color as the surrounding text, with just a
+     faint dotted underline hinting there's something to hover. */
+  .pop {
+    position: relative;
+    color: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    border-bottom: 1px dotted var(--text-faint);
+    outline: none;
+  }
+  .pop-media {
+    position: absolute;
+    left: 50%;
+    bottom: 150%;
+    width: 230px;
+    max-width: none;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    border: 4px solid var(--bg-elevated);
+    box-shadow: var(--shadow-lift);
+    transform: translate(-50%, 8px) scale(0.9) rotate(-2deg);
+    transform-origin: bottom center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease,
+      transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: 20;
+  }
+  /* Alternate the playful tilt so adjacent popups don't all lean the same way. */
+  .pop:nth-of-type(even) .pop-media {
+    transform: translate(-50%, 8px) scale(0.9) rotate(2deg);
+  }
+  .pop:hover .pop-media,
+  .pop:focus .pop-media,
+  .pop:focus-visible .pop-media {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1) rotate(-2deg);
+  }
+  .pop:nth-of-type(even):hover .pop-media,
+  .pop:nth-of-type(even):focus .pop-media,
+  .pop:nth-of-type(even):focus-visible .pop-media {
+    transform: translate(-50%, 0) scale(1) rotate(2deg);
+  }
+
+  /* The skateboard clip lives in a fixed, clipping frame; the video inside is
+     scaled up so the action is zoomed in rather than sitting small in frame. */
+  .pop-video-frame {
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .pop-video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1.6); /* zoom into the footage */
+    transform-origin: center center;
+  }
+
+  .see-all {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .news {
+    list-style: none;
+  }
+  .news-item {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 1.25rem;
+    padding: 0.55rem 0;
+    align-items: baseline;
+  }
+  .news-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+  .news-text {
+    font-size: 0.94rem;
+    color: var(--text);
+  }
+
+  @media (max-width: 560px) {
+    .hero {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .avatar {
+      width: 160px;
+      height: 160px;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+    .news-item {
+      grid-template-columns: 1fr;
+      gap: 0.1rem;
+      padding: 0.5rem 0;
+    }
+  }
+</style>

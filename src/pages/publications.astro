@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import { publications } from '../data/site';
+
+const order = ['Journal', 'Conference', 'Workshop', 'Preprint'] as const;
+const labels: Record<string, string> = {
+  Journal: 'Journal Articles',
+  Conference: 'Conference Papers',
+  Workshop: 'Workshop Papers',
+  Preprint: 'Preprints',
+};
+
+const grouped = order
+  .map((cat) => ({
+    label: labels[cat],
+    items: publications
+      .filter((p) => p.category === cat)
+      .sort((a, b) => b.year - a.year),
+  }))
+  .filter((g) => g.items.length > 0);
+---
+
+<BaseLayout title="Publications">
+  <h1 class="page-title rise">Publications</h1>
+
+  {
+    grouped.map((group) => (
+      <section class="rise">
+        <h2 class="section-title">{group.label}</h2>
+        {group.items.map((pub) => (
+          <PublicationCard pub={pub} />
+        ))}
+      </section>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .page-title {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .section-title:first-of-type {
+    margin-top: 2rem;
+  }
+</style>

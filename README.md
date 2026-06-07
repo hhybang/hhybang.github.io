@@ -1,86 +1,35 @@
-# Personal Website
+# hyeminbang.com
 
-This is my personal website built with Jekyll.
+Personal website of Hyemin (Helen) Bang, built with [Astro](https://astro.build)
+and deployed to GitHub Pages at [hyeminbang.com](https://hyeminbang.com).
 
-## Development
-
-### Prerequisites
-
-- Ruby (version 2.5 or higher)
-- Bundler (`gem install bundler`)
-
-### Setup
-
-1. Install dependencies:
-   ```bash
-   bundle install
-   ```
-
-2. Run the development server:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-3. Visit `http://localhost:4000` in your browser
-
-### Building for Production
+## Develop
 
 ```bash
-bundle exec jekyll build
+npm install      # install dependencies
+npm run dev      # start the dev server at http://localhost:4321
+npm run build    # production build into dist/
+npm run preview  # preview the production build locally
 ```
 
-The site will be generated in the `_site` directory.
+## Editing content
 
-## Deployment to GitHub Pages
+Most content lives in plain data files, so you rarely need to touch markup:
 
-1. Create a new repository named `username.github.io` (replace `username` with your GitHub username)
+- **Bio, news, publications, links** — [`src/data/site.ts`](src/data/site.ts)
+- **CV (HTML version)** — [`src/data/cv.ts`](src/data/cv.ts)
+- **CV PDF** — replace [`public/CV.pdf`](public/CV.pdf)
+- **Images** — [`public/images/`](public/images/) (profile photo, publication
+  thumbnails, hobby photos, favicons)
 
-2. Initialize git and push:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/username/username.github.io.git
-   git push -u origin main
-   ```
+Pages are in [`src/pages/`](src/pages/) (`index`, `publications`, `cv`), shared
+layout/components in [`src/layouts/`](src/layouts/) and
+[`src/components/`](src/components/), and theme tokens (including the accent
+color and dark mode) in [`src/styles/global.css`](src/styles/global.css).
 
-3. Enable GitHub Pages in repository settings (Settings > Pages > Source: main branch)
+## Deploy
 
-4. Your site will be available at `https://username.github.io`
-
-## Customization
-
-### Configuration
-
-Edit `_config.yml` to update:
-- Site title, email, and description
-- Social media usernames
-- Other site-wide settings
-
-### Content
-
-- **Home page**: Edit `index.markdown`
-- **About page**: Edit `about.markdown`
-- **Publications**: Edit `publications.markdown`
-- **CV**: Edit `cv.markdown`
-
-### Styling
-
-- Modify SCSS files in `_sass/` directory:
-  - `base.scss`: Base styles and typography
-  - `layout.scss`: Layout and navigation styles
-  - `pages.scss`: Page-specific styles
-
-### Adding a Profile Image
-
-1. Add your image to `assets/images/`
-2. Uncomment the image line in `index.markdown` and update the path
-
-### Adding Publications
-
-You can add publications directly in `publications.markdown` or create individual files in the `_publications/` directory for more complex content management.
-
-## License
-
-Feel free to fork and customize this template for your own use!
+Pushing to `main` triggers the GitHub Actions workflow in
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the
+site and publishes `dist/` to GitHub Pages. The custom domain is configured via
+the [`CNAME`](CNAME) file.
