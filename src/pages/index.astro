@@ -15,7 +15,8 @@ const selected = publications.filter((p) => p.selected);
     <div class="hero-text">
       <h1 class="name">
         <span class="name-text">Hyemin <span class="helen"><span class="helen-inner"
-              >Helen&nbsp;</span></span>Bang</span>
+              ><span class="alt alt-en">Helen</span><span class="alt alt-ko" lang="ko"
+                >혜민</span>&nbsp;</span></span>Bang</span>
       </h1>
       <p class="subtitle">{site.title}, {site.affiliation} · {site.tagline}</p>
       <SocialLinks />
@@ -32,11 +33,11 @@ const selected = publications.filter((p) => p.selected);
       can trust, oversee, and collaborate with AI systems.
     </p>
     <p>
-      I approach this from two angles. The first is understanding what models are
-      actually computing, using causal interpretability methods to find where a
-      model's stated reasoning diverges from what it's really doing inside. The
-      second is giving people ways to act on that understanding, designing
-      interactions where human judgment and disagreement actually shape how a
+      I approach this from two angles. The first looks inward: using causal
+      interpretability methods to uncover what and how models actually compute,
+      tracing the internal processes behind their reasoning. The second turns
+      outward: building interactions that put those internals within human reach,
+      so that people's judgment and disagreement can meaningfully steer how a
       model behaves.
     </p>
     <p>
@@ -62,18 +63,19 @@ const selected = publications.filter((p) => p.selected);
       MIT.
     </p>
     <p>
-      When I'm not at my desk, you'll usually find me out for a run in the
-      morning, <span
-        class="pop" tabindex="0">skateboarding<span class="pop-media pop-video-frame"
+      Outside of all that, you'll find me on a morning run,
+      <span class="pop" tabindex="0">skateboarding<span class="pop-media pop-video-frame"
           ><video src="/images/skateboard.mov" muted loop playsinline
-            preload="none"></video></span></span> to work, picking up flowers and
-      keeping a little vegetable garden, digging through record shops for vinyls,
-      or sweating in hot yoga. I
-      love trying new things, and lately I've been learning to sail and throw
-      pottery! And wherever I am, there's a good chance my dog
+            preload="none"></video></span></span> to work, keeping a little
+      garden, or hunting for <span class="pop" tabindex="0">vinyls<img
+          class="pop-media pop-media--vinyls" src="/images/vinyls.jpg"
+          alt="Me flipping through records at a vinyl shop" /></span>. I love
+      trying new things, and
+      lately I've been learning to sail and throw pottery! And wherever I am,
+      there's a good chance my dog
       <span class="chu" tabindex="0">Chu<img src="/images/chu.jpg"
           alt="Chu, my dog, wearing sunglasses" class="chu-photo" /></span> is
-      nearby.
+      nearby :)
     </p>
   </div>
 
@@ -191,20 +193,60 @@ const selected = publications.filter((p) => p.selected);
     transition: max-width 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   .helen-inner {
+    position: relative;
+    display: inline-block;
     color: var(--accent);
+    /* Both names use the soft Korean serif so the swap feels consistent. */
+    font-family: 'Gowun Batang', serif;
     opacity: 0;
     transition: opacity 0.3s ease 0.1s;
   }
+  /* The two names stack on top of each other; the English one (in normal flow)
+     sets the slot width, the Korean one is positioned over it. */
+  .alt {
+    display: inline-block;
+  }
+  .alt-ko {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-65%); /* nudge 혜민 slightly left of center */
+    opacity: 0;
+    white-space: nowrap;
+  }
   .name-text:hover .helen {
-    max-width: 7ch;
+    max-width: 6em;
   }
   .name-text:hover .helen-inner {
     opacity: 1;
   }
-  /* Touch devices can't hover, so reveal Helen by default there. */
+  /* While hovered, cross-fade between Helen and 혜민 on a loop. */
+  .name-text:hover .alt-en {
+    animation: name-swap-en 3s ease-in-out infinite;
+  }
+  .name-text:hover .alt-ko {
+    animation: name-swap-ko 3s ease-in-out infinite;
+  }
+  @keyframes name-swap-en {
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes name-swap-ko {
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .name-text:hover .alt-en,
+    .name-text:hover .alt-ko {
+      animation: none;
+    }
+  }
+  /* Touch devices can't hover, so reveal the name by default there. */
   @media (hover: none) {
     .helen {
-      max-width: 7ch;
+      max-width: 6em;
     }
     .helen-inner {
       opacity: 1;
@@ -307,6 +349,13 @@ const selected = publications.filter((p) => p.selected);
     z-index: 20;
   }
   /* Alternate the playful tilt so adjacent popups don't all lean the same way. */
+  /* Crop the vinyls photo to favor the right side of the frame. */
+  .pop-media--vinyls {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 72% center;
+  }
   .pop:nth-of-type(even) .pop-media {
     transform: translate(-50%, 8px) scale(0.9) rotate(2deg);
   }
